@@ -1,13 +1,16 @@
 /*
  * @Desc:
  * @Author: JacksonZhou
- * @Date: 1985/10/26
+ * @Date: 2020/12/06
  * @LastEditTime: 2020/12/06
  */
-import '../styles/globals.less';
+
+import { ReactNode } from 'react';
 import type { AppProps /*, AppContext */ } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
+import '../styles/globals.less';
+
+function MyApp({ Component, pageProps }: AppProps): ReactNode {
   return <Component {...pageProps} />;
 }
 
